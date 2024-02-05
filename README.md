@@ -14,8 +14,8 @@ Welcome to the **Data Engineering Training** Repository! 🚀 This repository se
 This repository is a consolidated resource for Data Engineering assignments that cover a range of topics, including data processing, storage, transformation, and integration.
 
 ## 🚀 Assignments
-- **Assignment 1:** [Problem Statement](assignments/assignment_1/problem_statement.md), [Solution](assignments/assignment_1/solution)
-- **Assignment 2:** [Problem Statement](assignments/assignment_2/problem_statement.md), [Solution](assignments/assignment_2/solution)
+- **Assignment 1:** [Problem: call one python file using other python file.], [Solution](assignments/show_by_sys.py)
+- **Assignment 2:** 
 - ...
 
 Explore the assignments folder to access problem statements and solutions for each task.
