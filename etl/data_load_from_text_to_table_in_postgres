@@ -1,0 +1,20 @@
+-- create a temp table
+CREATE temp TABLE staging_product1 (
+    pid text);
+select* from staging_product1
+--copy data into that temp stage table
+COPY staging_product1(pid)
+FROM 'F:\postgresql_training1_ati\scripts\raw_Data.txt';
+
+select* from product
+
+-- Inserting into product from staging_product1
+insert into product
+select
+substring(pid from 1 for 5) as pid,
+substring(pid from 6 for 10) as pname,
+substring(pid from 16 for 6) as pname,
+substring(pid from 22 for 6):: int as pprice,
+substring(pid from 28 for 10):: date as ppurchase_date,
+substring(pid from 38 for 10) as ppurchage_by
+from staging_product1;
